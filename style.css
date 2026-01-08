@@ -1,101 +1,133 @@
-/* ======================
-             NAV
-   ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  z-index: 1000;
+/*
+* {
+    margin: 0;
+    padding: 0;
+} -> utilisé pour savoir si on a un problème de margin et padding et de voir quelle est la zone du code qui pose problème, doit être laissé en commentaire quand pas d'utilité*/
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0; /*car les balises ont d'office un petit espace*/
+    color: #8b8b8b;
+    line-height: 1.2em;
+}
+
+nav{
+    width:100%;
+	height: 70px;
+	background-color:black;
+	color:white;
+	padding-left: 15em;
+    margin-left: -10px;
+    position: fixed; 
+    top: 0; 
+    font-weight: bold;
+    font-size:1.3em;
+}
+
+a:link{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: white;
+}
+
+a:visited{
+color: white;
+}
+
+a:hover, a:focus{
+background-color: none;
+text-decoration: underline;
+}
+
+a:active{
+color: #e63636;
+}
+
+a.current{
+    color: #e63636;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
 }
 
-ul li {
-  display: inline-block;
-  border-right: 2px lightgrey solid;
-  padding: 10px;
-  margin: 10px;
+ul li a {
+display: block;
+padding: 14px 16px;
 }
 
-li a {
-  text-decoration: none;
-  color: white;
+li{
+    border-right: 2px white solid;
+    padding-right: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-.article {
-  color: white;
+li:last-child {
+    border-right: none;
 }
 
-.article:hover {
-  color: blue;
+h1{
+    font-family: 'Google Sans';
+    font-size: 1.3em;
+    color: #e63636;
+    padding-left: 45px;
+    margin-top: 5em;
+	margin-left: 6em;
 }
 
-.article.active {
-  color: red;
+h2{
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: lightgrey;
+    padding-bottom: 30px;
+    color: grey;
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    margin-left: 5em;
 }
 
-/* ======================
-            BODY / ARTICLE
-   ====================== */
-
-body {
-  padding-top: 50px;
+h4{
+    font-family: 'Montserrat';
+    color: #e63636;
+    font-size: 0.9em;
+    text-align: center;
 }
 
-div {
-  background-color: lightgrey;
-  width: 600px;
-  margin-left: 30%;
-  padding: 20px;
-  margin-top: 15px;
+h5{
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: bold;
 }
 
-
-
-/* ======================
-            TITRES
-   ====================== */
-
-h1 {
-  margin: 30px 80px 10px;
-  font-weight: 300;
-  font-size: 20px;
-  color: red;
+p{
+    font-family: 'Roboto';
+    text-align: justify;
+    line-height:1.5em;
 }
 
-h2 {
-  margin: 10px 70px 20px;
-  font-weight: 300;
-  font-size: 20px;
-  color: grey;
+.cadretxt
+{
+    background-color: lightgrey;
+    padding: 1em;
+    /*margin-left: 10em; /*on peut travailler en em de taille de police ou en % de taille d'écran*/
+    /*margin-right: 10em; /*on peut travailler en em de taille de police ou en % de taille d'écran*/
+    width: 65%;
+    margin: auto;
+    max-width: 800px;
+    min-width: 600px;
+    text-align: justify;
 }
 
-h3 {
-  width: 600px;
-  margin: 20px auto 0;
-  text-align: center;
+.important{
+	color:e63636;
+	font-weight:bolder;
 }
-
-/* ======================
-        DATE
-   ====================== */
-
-time {
-  display: block;
-  width: 600px;
-  margin: 6px auto 0;
-  text-align: center;
-  color: grey;
-}
-
-
-/* * {
-  margin: 0;
-  padding: 0; */

@@ -1,0 +1,101 @@
+/* ======================
+             NAV
+   ====================== */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ul li {
+  display: inline-block;
+  border-right: 2px lightgrey solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+.article {
+  color: white;
+}
+
+.article:hover {
+  color: blue;
+}
+
+.article.active {
+  color: red;
+}
+
+/* ======================
+            BODY / ARTICLE
+   ====================== */
+
+body {
+  padding-top: 50px;
+}
+
+div {
+  background-color: lightgrey;
+  width: 600px;
+  margin-left: 30%;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+
+
+/* ======================
+            TITRES
+   ====================== */
+
+h1 {
+  margin: 30px 80px 10px;
+  font-weight: 300;
+  font-size: 20px;
+  color: red;
+}
+
+h2 {
+  margin: 10px 70px 20px;
+  font-weight: 300;
+  font-size: 20px;
+  color: grey;
+}
+
+h3 {
+  width: 600px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+/* ======================
+        DATE
+   ====================== */
+
+time {
+  display: block;
+  width: 600px;
+  margin: 6px auto 0;
+  text-align: center;
+  color: grey;
+}
+
+
+/* * {
+  margin: 0;
+  padding: 0; */
